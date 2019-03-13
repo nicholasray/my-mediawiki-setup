@@ -56,13 +56,14 @@ eof
 # Install PHP dependencies.
 time for i in . extensions/*/ skins/*/; do composer -d"$i" install; composer -d"$i" update; done
 
-# Add your LocalSettings.php as LocalSettingsDev.php.
+# Add your LocalSettings.php as LocalSettingsDev.php. See the bottom of this README
+# for a copy of my LocalSettingsDev.php
 
 # Symlink the core folder to the `w` directory (needed for friendly urls):
 ln -s . w
 
 # Important! Add your .htaccess file to your `core` folder. See the boxwiki
-# README for a copy of the .htaccess file.
+# README for a copy of a .htaccess file that will work.
 
 # Install node and nvm: You can probably skip the following if you just want mediawiki to
 # run and are not doing development work on mediawiki that require old versions
