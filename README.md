@@ -22,7 +22,7 @@ Now, let's install more dependencies:
 
 ```bash
 # MediaWiki development dependencies.
-brew install composer nvm
+brew install composer
 
 # Download boxwiki to your favorite directory
 git clone https://github.com/niedzielski/boxwiki.git
